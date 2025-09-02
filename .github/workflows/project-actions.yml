@@ -52,6 +52,6 @@ jobs:
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: "Needs Review" # Target status
       - name: Label PR with release-drafter
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
